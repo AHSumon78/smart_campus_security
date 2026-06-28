@@ -1,6 +1,6 @@
 # Smart Campus Security AI System
 
-## Supervisor Quick Overview
+## Quick Overview
 
 এই প্রজেক্টটি একটি AI-based Smart Campus Security, Face Authentication এবং Attendance Management System. সিস্টেমটি student/person database, face recognition AI server, web dashboard, access logging, security alert, photo update review, role-based user management এবং live attendance একসাথে পরিচালনা করতে পারে।
 

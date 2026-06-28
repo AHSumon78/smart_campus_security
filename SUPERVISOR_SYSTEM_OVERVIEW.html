@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Smart Campus Security AI System - Supervisor Overview</title>
+  <style>
+    body {
+      margin: 0;
+      color: #17202a;
+      background: #f4f6f8;
+      font-family: Arial, "Noto Sans Bengali", sans-serif;
+      line-height: 1.55;
+    }
+    main {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 32px 22px 56px;
+      background: #fff;
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: 34px;
+      color: #0b5ed7;
+    }
+    h2 {
+      margin-top: 34px;
+      padding-bottom: 7px;
+      border-bottom: 2px solid #dce4ee;
+      color: #111827;
+      font-size: 24px;
+    }
+    h3 {
+      margin-top: 24px;
+      color: #1f2937;
+      font-size: 19px;
+    }
+    .subtitle {
+      margin: 0 0 24px;
+      font-size: 18px;
+      color: #4b5563;
+    }
+    .summary {
+      padding: 18px 20px;
+      border-left: 5px solid #0b5ed7;
+      background: #eef5ff;
+      font-size: 17px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 14px 0 22px;
+      font-size: 15px;
+    }
+    th, td {
+      border: 1px solid #d9e1ea;
+      padding: 10px 12px;
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      background: #111827;
+      color: #fff;
+    }
+    ul, ol {
+      padding-left: 24px;
+    }
+    li {
+      margin: 5px 0;
+    }
+    figure {
+      margin: 16px 0 28px;
+      border: 1px solid #d9e1ea;
+      background: #fafafa;
+    }
+    figure img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    figcaption {
+      padding: 10px 12px;
+      color: #374151;
+      font-size: 14px;
+      border-top: 1px solid #d9e1ea;
+      background: #fff;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+    .callout {
+      padding: 14px 16px;
+      background: #f8fafc;
+      border: 1px solid #d9e1ea;
+      border-radius: 6px;
+    }
+    .one-line {
+      margin-top: 34px;
+      padding: 18px;
+      background: #111827;
+      color: #fff;
+      font-weight: 700;
+      border-radius: 6px;
+    }
+    @media print {
+      body { background: #fff; }
+      main { max-width: none; padding: 18px; }
+      figure { break-inside: avoid; }
+      h2 { break-after: avoid; }
+    }
+    @media (max-width: 760px) {
+      main { padding: 22px 14px 42px; }
+      h1 { font-size: 28px; }
+      .grid { grid-template-columns: 1fr; }
+      table { font-size: 13px; }
+      th, td { padding: 8px; }
+    }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Smart Campus Security AI System</h1>
+  <p class="subtitle">Supervisor-friendly project overview</p>
+
+  <p class="summary">
+    এই প্রজেক্টটি একটি AI-based Smart Campus Security, Face Authentication এবং Attendance Management System.
+    সিস্টেমটি student database, face recognition, live camera detection, access log, security alert,
+    photo update review, analytics, user role management এবং course-wise attendance একসাথে পরিচালনা করতে পারে।
+  </p>
+
+  <h2>1. System at a Glance</h2>
+  <table>
+    <tr><th>Area</th><th>Capability</th></tr>
+    <tr><td>Authentication</td><td>Username/password based secure login</td></tr>
+    <tr><td>AI Face Recognition</td><td>Captured face কে database photo/embedding এর সাথে match করে</td></tr>
+    <tr><td>Access Decision</td><td>Match হলে Granted, না হলে Denied/No Match</td></tr>
+    <tr><td>Banned Detection</td><td>Banned person detect হলে red alert দেখায়</td></tr>
+    <tr><td>Live Camera</td><td>Camera/video feed থেকে multiple face detect ও identify করে</td></tr>
+    <tr><td>Student Management</td><td>Student add, edit, delete, search, photo, department, banned status manage করা যায়</td></tr>
+    <tr><td>Analytics</td><td>Total students, embeddings, access source, department-wise chart</td></tr>
+    <tr><td>Attendance</td><td>Course/session based live attendance, manual present, Excel/PDF export</td></tr>
+    <tr><td>API/Mobile</td><td>Flutter/API login, face check, staff photo update endpoint support</td></tr>
+  </table>
+
+  <h2>2. Main Roles</h2>
+  <table>
+    <tr><th>Role</th><th>Responsibility</th></tr>
+    <tr><td>Admin</td><td>Full system control, user management, review/approve actions</td></tr>
+    <tr><td>Manager</td><td>Dashboard, analytics, students, logs, attendance, security monitoring</td></tr>
+    <tr><td>Registration Desk</td><td>Student registration and photo management</td></tr>
+    <tr><td>Security Guard</td><td>Face check / access verification</td></tr>
+    <tr><td>Staff</td><td>App/API based face check and assisted photo update</td></tr>
+    <tr><td>Especial</td><td>Live detection and live attendance features</td></tr>
+  </table>
+
+  <h2>3. Login and Navigation</h2>
+  <figure>
+    <img src="Screenshot%202026-06-28%20215320.png" alt="Login screen">
+    <figcaption>Secure login page for system users.</figcaption>
+  </figure>
+  <figure>
+    <img src="Screenshot%202026-06-28%20215832.png" alt="AI camera menu">
+    <figcaption>AI & Camera module: Face Check, Live Detection, and Live Attendance.</figcaption>
+  </figure>
+
+  <h2>4. AI Face Recognition Workflow</h2>
+  <ol>
+    <li>User opens Face Check or Live Detection.</li>
+    <li>System captures image from camera/upload.</li>
+    <li>Image is sent to the AI recognition service.</li>
+    <li>AI extracts face embedding and compares with stored student embeddings.</li>
+    <li>If match is found, system returns student details, confidence, department, and access status.</li>
+    <li>Every attempt is saved in Access Log.</li>
+    <li>If the person is banned or suspicious activity is detected, a security alert is created.</li>
+  </ol>
+  <figure>
+    <img src="Screenshot%202026-06-28%20220036.png" alt="Face check granted result">
+    <figcaption>Successful match result: captured image vs database image, student ID, department, confidence, and Granted status.</figcaption>
+  </figure>
+
+  <h2>5. Live AI Camera Detection</h2>
+  <p>The live camera system can detect multiple faces in one frame, identify known students, mark unknown faces, and highlight banned persons.</p>
+  <figure>
+    <img src="Screenshot%202026-06-28%20220740.png" alt="Live AI face recognition">
+    <figcaption>Known faces are labelled; banned person is highlighted in red.</figcaption>
+  </figure>
+
+  <h2>6. Dashboard and Analytics</h2>
+  <p>Management can see total students, generated embeddings, today's access, pending photo requests, department-wise chart, and access source distribution.</p>
+  <figure>
+    <img src="Screenshot%202026-06-28%20215622.png" alt="Analytics and system management">
+    <figcaption>Analytics page with system scale, access statistics, charts, bulk upload, and embedding recalculation.</figcaption>
+  </figure>
+
+  <h2>7. Access History and Audit Log</h2>
+  <p>Every success/denied attempt is recorded with student name, ID, source/location, date, time, search/filter, print PDF, and cleanup option.</p>
+  <figure>
+    <img src="Screenshot%202026-06-28%20215641.png" alt="Access history log">
+    <figcaption>Audit trail of access attempts from Web Staff and Live AI Camera.</figcaption>
+  </figure>
+
+  <h2>8. Student Management</h2>
+  <p>The system supports student add/edit/delete/search, photo storage, department data, active/banned status, and embedding generation.</p>
+  <figure>
+    <img src="Screenshot%202026-06-28%20215706.png" alt="Student management">
+    <figcaption>Student database list with photo, student ID, name, department, status, and actions.</figcaption>
+  </figure>
+
+  <h2>9. Photo Update Review</h2>
+  <p>Staff can submit a new photo request, and admin can compare old vs new photo before approving or rejecting. This prevents unauthorized photo replacement.</p>
+  <div class="grid">
+    <figure>
+      <img src="Screenshot%202026-06-28%20215744.png" alt="Photo update start">
+      <figcaption>Photo update request starts by entering student ID.</figcaption>
+    </figure>
+    <figure>
+      <img src="Screenshot%202026-06-28%20215757.png" alt="Pending photo requests">
+      <figcaption>Admin review page with current/old photo, new photo, approve and reject actions.</figcaption>
+    </figure>
+  </div>
+
+  <h2>10. Attendance Management</h2>
+  <p>The attendance module supports course/session based live attendance, upload photos/video, manual mark present, percentage calculation, and Excel/PDF export.</p>
+  <div class="grid">
+    <figure>
+      <img src="Screenshot%202026-06-28%20220910.png" alt="Attendance export">
+      <figcaption>Attendance sheet with present/absent status and Excel/PDF download.</figcaption>
+    </figure>
+    <figure>
+      <img src="Screenshot%202026-06-28%20221011.png" alt="Live attendance running">
+      <figcaption>Live attendance running for a course/session with manual and media upload options.</figcaption>
+    </figure>
+  </div>
+
+  <h2>11. User Management</h2>
+  <p>Admin can create/edit/delete system users and assign roles like Staff, Manager, Security Guard, Registration Desk, and Especial.</p>
+  <figure>
+    <img src="Screenshot%202026-06-28%20215814.png" alt="System user management">
+    <figcaption>Role-based user management panel.</figcaption>
+  </figure>
+
+  <h2>12. Technical Implementation</h2>
+  <table>
+    <tr><th>Layer</th><th>Implementation</th></tr>
+    <tr><td>Backend</td><td>Django</td></tr>
+    <tr><td>AI Service</td><td>Separate AI server client integration</td></tr>
+    <tr><td>Face Recognition</td><td>Face embeddings, model files, cache/FAISS-style fast lookup</td></tr>
+    <tr><td>Frontend</td><td>Django templates, Bootstrap, JavaScript camera features</td></tr>
+    <tr><td>Database Models</td><td>Person, AccessLog, FailedAttemptLog, PhotoUpdateRequest, SecurityAlert, Course, Attendance</td></tr>
+    <tr><td>Real-time Alert</td><td>Django Channels/WebSocket style alert push</td></tr>
+    <tr><td>Notification</td><td>Firebase Cloud Messaging support for banned person alerts</td></tr>
+    <tr><td>Export</td><td>OpenPyXL for Excel, ReportLab for PDF</td></tr>
+    <tr><td>API</td><td>Flutter login, face detection/check, staff photo update</td></tr>
+  </table>
+
+  <h2>13. Important Work Completed</h2>
+  <ul>
+    <li>Complete Django web system for Smart Campus Security.</li>
+    <li>Student/person database with photo and face embedding storage.</li>
+    <li>AI face recognition service integration.</li>
+    <li>Successful and failed access logging.</li>
+    <li>Banned person detection and security alert system.</li>
+    <li>Analytics dashboard with charts and key metrics.</li>
+    <li>Student CRUD and bulk management features.</li>
+    <li>Staff-assisted photo update request and admin review workflow.</li>
+    <li>User roles and permission-based page access.</li>
+    <li>Live detection and live attendance modules.</li>
+    <li>Course/session attendance sheet with Excel/PDF download.</li>
+    <li>Flutter/API endpoints for mobile or external app integration.</li>
+  </ul>
+
+  <h2>14. Suggested Demo Flow</h2>
+  <ol>
+    <li>Login to the system.</li>
+    <li>Show Analytics page to explain total students, embeddings, and charts.</li>
+    <li>Open Student Management to show the database.</li>
+    <li>Open Face Check and show Granted result.</li>
+    <li>Open Live Detection and explain multiple face/banned detection.</li>
+    <li>Open Access History Log to show audit trail.</li>
+    <li>Open Photo Update Request to show admin review.</li>
+    <li>Open Live Attendance to show course/session attendance and export.</li>
+    <li>Open User Management to explain role-based access.</li>
+  </ol>
+
+  <p class="one-line">
+    One-line summary: This project is an AI-powered Smart Campus Security and Attendance Management System that can recognize faces, manage students, detect banned persons, log every access attempt, generate analytics, process photo updates, manage users by role, and create course-wise attendance reports.
+  </p>
+</main>
+</body>
+</html>
